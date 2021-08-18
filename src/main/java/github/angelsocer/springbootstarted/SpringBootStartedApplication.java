@@ -1,5 +1,6 @@
 package github.angelsocer.springbootstarted;
 
+import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -7,7 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringBootStartedApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootStartedApplication.class, args);
+        SpringApplication application = new SpringApplication(SpringBootStartedApplication.class);
+        application.run(args);
     }
 
 }
